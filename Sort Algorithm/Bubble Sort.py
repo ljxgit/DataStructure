@@ -7,7 +7,7 @@ def bubble_sort(arr):
         for j in range(i+1,len(arr)): # 另一个游标遍历，寻找不符合排序的元素
             if arr[j]<arr[i]:
                 arr[i], arr[j] = arr[j], arr[i]
-    return arr
 
 a=[2,56,1,0,33,11,4]
-print(bubble_sort(a))
+bubble_sort(a)
+print(a)
