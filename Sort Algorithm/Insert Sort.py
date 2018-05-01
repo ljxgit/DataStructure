@@ -14,7 +14,6 @@ def insert_sort(arr):
                 arr[j-1] = temp
             else: # 否则，前面i-1个元素都小于新元素，已经是有序序列
                 break
-    return arr
 
 def insert_sort_move(arr):
     for i in range(1,len(arr)): # arr[:i-1]已经是有序序列
@@ -25,7 +24,7 @@ def insert_sort_move(arr):
                 arr[j] = arr[j-1] # 只是移动元素，并没有交换
                 j -= 1
             arr[j] = new # 最后将新插入元素放置在j处
-    return arr
 
 a=[34,8,64,51,32,21]
-print(insert_sort_move(a))
+insert_sort_move(a)
+print(a)
